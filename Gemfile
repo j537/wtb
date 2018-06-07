@@ -11,7 +11,9 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'redis', '~> 3.0'
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
+gem 'knock'
+gem 'active_model_serializers'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -21,6 +23,8 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.4'
   gem 'shoulda-matchers', '~> 3.0', require: false
   gem 'database_cleaner', '~> 1.5'
+  gem "factory_bot_rails", "~> 4.0"
+  gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 end
 
 group :development do
