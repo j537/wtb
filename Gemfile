@@ -18,6 +18,9 @@ gem 'redis', '~> 3.0'
 
 group :development, :test do
   gem 'byebug', platform: :mri
+  gem 'rspec-rails', '~> 3.4'
+  gem 'shoulda-matchers', '~> 3.0', require: false
+  gem 'database_cleaner', '~> 1.5'
 end
 
 group :development do
